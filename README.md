@@ -1,2 +1,2 @@
 # Trabajo-en-equipo
-Compu
+Compu .py no?
