@@ -9,3 +9,4 @@ def lines(nombreArchivo,Nombres):
                 print i
   except:
    return("error")
+#Nesesitamos que el chavo que le toco el dic acabe ya que para poder hacer nuestra parte nesesitamos su parte atte:luis
