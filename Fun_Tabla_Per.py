@@ -20,3 +20,21 @@ def lines(nombreArchivo,Nombres):
         Busca(dictionary,Nombres)
     except:
           return("error")
+
+#--------------------------------RICARDO---------------------
+def lines(nombreArchivo,N):
+    try:
+        f = open(nombreArchivo,"r")
+        l = f.readlines()
+        return l[:N]
+    except:
+        return("error")
+
+
+
+def dictionary(tabla):
+    areglo = lines('elementos.csv',2)
+    element = {}
+    element('nombre') = nombre
+    element{'resto'} = resto
+    dictionary[a] = elemento
