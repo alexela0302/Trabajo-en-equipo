@@ -1,13 +1,13 @@
-#Funcion que recive una lista de nombres (Oxygen, Hydrogen, etc.) y regresa la información
+#Funcion que recive una lista de nombres (Oxygen, Hydrogen, etc.) y regresa la informacion
 #de los elementos correspondientes
 #_________________________Alejandro Solorio__________________________________
-def Busca(dic,Nom):
+def Busca_nombres(dic,Nom):
     for i in dic:
         for j in Nom:
             if (j==dic[i]['nombre'][:-1]):
                 print i,dic[i]
 
-def lines(nombreArchivo,Nombres):
+def lines_nombres(nombreArchivo,Nombres):
     try:
         f = open(nombreArchivo,"r")
         l = f.readlines()
@@ -25,19 +25,24 @@ def lines(nombreArchivo,Nombres):
           return("error")
 
 #--------------------------------RICARDO CUAMO---------------------
-def lines(nombreArchivo,N):
+def Busca_simbol(dic,sim):
+    for i in dic:
+        if (sim==i):
+            print i,dic[i]
+
+def lines_simbol(nombreArchivo,sim):
     try:
         f = open(nombreArchivo,"r")
         l = f.readlines()
-        return l[:N]
+        dictionary={}
+
+        for i in l:
+            elemento={}
+            k = i.split()
+            elemento['nombre']=k[3]
+            X=k[4:]
+            elemento['resto']=X
+            dictionary[k[1]]=elemento
+        Busca_simbol(dictionary,sim)
     except:
-        return("error")
-
-
-
-def dictionary(tabla):
-    areglo = lines('elementos.csv',2)
-    element = {}
-    element('nombre') = nombre
-    element{'resto'} = resto
-    dictionary[a] = elemento
+          return("error")
