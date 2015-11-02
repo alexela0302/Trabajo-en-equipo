@@ -25,6 +25,7 @@ def lines_nombres(nombreArchivo,Nombres):
           return("error")
 
 #--------------------------------RICARDO CUAMO---------------------
+#Funcion que recive el simbolo de un elemento y regresa la informacion del elemento
 def Busca_simbol(dic,sim):
     for i in dic:
         if (sim==i):
