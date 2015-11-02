@@ -1,3 +1,6 @@
+#Funcion que recive una lista de nombres (Oxygen, Hydrogen, etc.) y regresa la información
+#de los elementos correspondientes
+#_________________________Alejandro Solorio__________________________________
 def Busca(dic,Nom):
     for i in dic:
         for j in Nom:
@@ -21,7 +24,7 @@ def lines(nombreArchivo,Nombres):
     except:
           return("error")
 
-#--------------------------------RICARDO---------------------
+#--------------------------------RICARDO CUAMO---------------------
 def lines(nombreArchivo,N):
     try:
         f = open(nombreArchivo,"r")
